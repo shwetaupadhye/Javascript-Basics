@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date and Time</title>
+</head>
+<body>
+
+    <button type="button" onclick="document.getElementById('demo').innerHTML = Date()"> Click</button> 
+<p id="demo"></p>
+
+<button type="button" onclick="document.getElementById('monthOnly').innerHTML = d.getMonth()">The Month Is</button>
+<p id="monthOnly"></p>
+
+<button type="button" onclick="document.getElementById('yearOnly'). innerHTML = d.getFullYear()">The Year Is</button>
+<p id="yearOnly"></p>
+
+<button type="button" onclick="document.getElementById('dayOnly').innerHTML = d.getDate()">The The Day Is</button>
+<p id="dayOnly"></p>
+
+<button type="button" onclick="document.getElementById('hoursOnly').innerHTML = d.getHours()">Hours Are</button>
+<p id="hoursOnly"></p>
+
+<button type="button" onclick="document.getElementById('minutesOnly').innerHTML = d.getMinutes()">Minits Are</button>
+<p id="minutesOnly"></p>
+<script>
+    var d = new Date();
+    document.getElementById("monthOnly").innerHTML = d.getMonth() +1;
+    document.getElementById("yearOnly").innerHTML = d.getFullYear();
+    document.getElementById("dayOnl").innerHTML = d.getDate();
+    document.getElementById("hoursOnly").innerHTML = d.getHours();
+    document.getElementById("minutesOnly").innerHTML = d.getMinutes();
+    </script>
+
+    
+</body>
+</html>
